@@ -1724,7 +1724,7 @@ b {
           text-transform: uppercase; }
         #info_table .item_name .info_label span {
           position: relative !important;
-          top: 11px;
+          top: 10px;
           left: 16px;
           font-family: "Noto Sans KR", sans-serif;
           font-size: 14px;
@@ -1760,7 +1760,7 @@ b {
           text-transform: uppercase; }
         #info_table .item_brand .info_label span {
           position: relative !important;
-          top: 11px;
+          top: 10px;
           left: 16px;
           font-family: "Noto Sans KR", sans-serif;
           font-size: 14px;
@@ -1792,7 +1792,7 @@ b {
           text-transform: uppercase; }
         #info_table .item_size .info_label span {
           position: relative !important;
-          top: 11px;
+          top: 10px;
           left: 16px;
           font-family: "Noto Sans KR", sans-serif;
           font-size: 14px;

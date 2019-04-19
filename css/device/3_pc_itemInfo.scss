@@ -25,7 +25,7 @@
                 @include size(364px, 40px);
                 @include info_label;
                 span{
-                    @include position(relative, 11px, null, null, 16px);
+                    @include position(relative, 10px, null, null, 16px);
                     @include button;
                     font-weight: $bold !important;
                 }
@@ -51,7 +51,7 @@
                 @include size(364px, 40px);    
                 @include info_label;
                 span{
-                    @include position(relative, 11px, null, null, 16px);
+                    @include position(relative, 10px, null, null, 16px);
                     @include button;
                     font-weight: $bold !important;
                 }
@@ -74,7 +74,7 @@
                 @include size(364px, 40px);
                 @include info_label;
                 span{
-                    @include position(relative, 11px, null, null, 16px);
+                    @include position(relative, 10px, null, null, 16px);
                     @include button;
                     font-weight: $bold !important;
                 }
