@@ -23,6 +23,10 @@
             visibility: hidden;
             &:active{
                 background: btnColor(whiteColor_active);
+                .btn_name {
+                    display: none !important;
+                    visibility: hidden !important;
+                }
             }
         }
 
@@ -35,6 +39,10 @@
             visibility: hidden;
             &:active{
                 background: btnColor(whiteColor_active);
+                .btn_name {
+                    display: none !important;
+                    visibility: hidden !important;
+                }
             }
         }
 

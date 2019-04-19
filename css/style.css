@@ -665,6 +665,9 @@ b {
         text-align: right; }
       #img_viewer .btn_fs:active {
         background: #eee; }
+        #img_viewer .btn_fs:active .btn_name {
+          display: none !important;
+          visibility: hidden !important; }
     #img_viewer .btn_exitfs {
       width: 40px;
       height: 40px;
@@ -727,6 +730,9 @@ b {
         text-align: right; }
       #img_viewer .btn_exitfs:active {
         background: #eee; }
+        #img_viewer .btn_exitfs:active .btn_name {
+          display: none !important;
+          visibility: hidden !important; }
     #img_viewer .btn_viewerClose {
       width: 40px;
       height: 40px;
@@ -1359,6 +1365,9 @@ b {
         text-align: right; }
       #img_viewer .btn_fs:active {
         background: #eee; }
+        #img_viewer .btn_fs:active .btn_name {
+          display: none !important;
+          visibility: hidden !important; }
     #img_viewer .btn_exitfs {
       width: 40px;
       height: 40px;
@@ -1421,6 +1430,9 @@ b {
         text-align: right; }
       #img_viewer .btn_exitfs:active {
         background: #eee; }
+        #img_viewer .btn_exitfs:active .btn_name {
+          display: none !important;
+          visibility: hidden !important; }
     #img_viewer .btn_viewerClose {
       width: 40px;
       height: 40px;
@@ -1481,6 +1493,9 @@ b {
         text-align: right; }
       #img_viewer .btn_viewerClose:active {
         background: #eee; }
+        #img_viewer .btn_viewerClose:active .btn_name {
+          display: none !important;
+          visibility: hidden !important; }
     #img_viewer .main_img {
       position: absolute !important;
       top: 50%;
