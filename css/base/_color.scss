@@ -1,0 +1,58 @@
+$colors : (
+    mainColor: #67AFC2,
+    mainColor_light: #70B9CC,
+    mainColor_dark: #519EB2
+);
+
+$status : (
+    agree: #2966ba,
+    warning: #c53e38,
+    caution: #efaa46
+);
+
+$subColors : (
+    primary: #68839F,
+    primary_light: #7790A9,
+    primary_dark: #5C7898,
+
+    secondary: #c1cad6,
+    secondary_light: #ced6e0,
+    secondary_dark: #a4b0be
+);
+
+$btnColors : (
+    whiteColor : #fafafa,
+    whiteColor_hover : #fff,
+    whiteColor_active : #eee,
+
+    darkColor : linear-gradient(45deg, #324e63, #383e44),
+    darkColor_hover : linear-gradient(45deg, #415e73, #40474e),
+    darkColor_active : linear-gradient(45deg, #253E52, #2D3236)
+);
+
+$bgColors : (
+    primary: #fff,
+    secondary: #eee,
+    thirdary: #ddd
+);
+
+
+@function color($color-name){
+    @return map-get($colors , $color-name)
+};
+
+@function subColor($subColor-name){
+    @return map-get($subColors , $subColor-name)
+};
+
+@function btnColor($btnColor-name){
+    @return map-get($btnColors , $btnColor-name)
+};
+
+@function bgColor($bgColor-name){
+    @return map-get($bgColors , $bgColor-name)
+};
+
+@function status($color-name){
+    @return map-get($status , $color-name)
+};

@@ -1,0 +1,73 @@
+@mixin common_viewerBtns() {
+    @include size (40px, 40px);
+    @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    &:hover {
+      @include box-shadow(0px, 4px, 16px, rgba(22,65,76,0.32));
+      .btn_icon {
+          fill: color(mainColor);
+      }
+      .btn_name {
+          display: block;
+          color: color(mainColor);
+      }
+    }
+    &:active {
+      @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+      .btn_icon {
+          fill: color(mainColor_dark);
+      }
+      .btn_name {
+          display: block;
+          color: color(mainColor_dark);
+      }
+    }
+
+    .btn_icon {
+      @include position(absolute, 8px, null, null, 8px);
+      @include size (24px, 24px);
+      display: block;
+      fill: subColor(primary);
+    }
+    
+    .btn_name {
+      @include position(absolute, 9px, 11px, null, null);
+      @include no-select;
+      @include subtitle_02;
+      display: none;
+      float: right;
+      text-align: right;    
+    }
+}
+
+@mixin scroll_bar() {
+
+    &::-webkit-scrollbar {
+        width:6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f11f;      
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #b4b4b421;
+        &:hover {
+            background: #4b4b4b3b;     
+        }
+    }
+}
+
+@mixin info_label() {
+    border: 2px solid subColor(primary_light);
+
+    span {
+       @include no-select;
+
+       color: subColor(primary_dark);
+       font-weight: $bold;
+       text-transform: uppercase; 
+    }
+}

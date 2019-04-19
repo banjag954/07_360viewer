@@ -1,0 +1,30 @@
+// Modules and Variables
+@import './base/_mixins';
+
+// 만약 공용 css를 넣어야 할 경우 넣을 것.
+body {
+    @include size(100vw, 100vh);
+    background: #f2f2f2 !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.open {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.close {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+// full 조건 css
+.full {
+    width: 100vw !important;
+    height: 100vh !important;
+
+    #img_sample{
+        width: 78vw !important;
+    }
+}

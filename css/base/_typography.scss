@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+
+/* Google font*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('../font/notosanskr_black_webfont.woff2') format('woff2'),
+         url('../font/notosanskr_black_webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('../font/notosanskr_bold_webfont.woff2') format('woff2'),
+         url('../font/notosanskr_bold_webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('../font/notosanskr_medium_webfont.woff2') format('woff2'),
+         url('../font/notosanskr_medium_webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('../../font/otosanskr_regular_webfont.woff2') format('woff2'),
+         url('../../font/notosanskr_regular_webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family:'Noto Sans KR';
+  src: url('../font/notosanskr_light_webfont.woff2') format('woff2'),
+       url('../font/notosanskr_light_webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('../font/notosanskr_thin_webfont.woff2') format('woff2'),
+         url('../font/notosanskr_thin_webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+
+// Font weights
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+// Base Font
+$base-font-family: 'Noto Sans KR', sans-serif;
+
+
+// Font style
+
+body {
+    font-family: $base-font-family;
+}
+
+h1 {
+  font-family: $base-font-family;
+  font-size: 96px;
+  font-weight: $bold;
+  line-height: 142px;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+
+  font-family: $base-font-family;
+  font-size: 60px;
+  font-weight: $bold;
+  line-height: 88px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-family: $base-font-family;
+  font-size: 48px;
+  font-weight: $bold;
+  line-height: 72px;
+  letter-spacing: normal;
+}
+
+h4 {
+
+  font-family: $base-font-family;
+  font-size: 34px;
+  font-weight: $bold;
+  line-height: 50px;
+  letter-spacing: 0.3px;
+}
+
+h5 {
+
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: $regular;
+  line-height: 36px;
+  letter-spacing: normal;
+}
+
+h6 {
+
+  font-family: $base-font-family;
+  font-size: 20px;
+  font-weight: $medium;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+@mixin subtitle_01() {
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+@mixin subtitle_02() {
+
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+@mixin body_01() {
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+@mixin body_02() {
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+@mixin caption() {
+  font-family: $base-font-family;
+  font-size: 12px;
+  font-weight: $regular;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+}
+
+@mixin button() {
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+}
+
+@mixin outline() {
+  font-family: $base-font-family;
+  font-size: 10px;
+  font-weight: $regular;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+}
+
+b{
+    font-weight: $bold;
+}
+
