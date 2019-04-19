@@ -25,10 +25,6 @@
 
             &:active{
                 background: btnColor(whiteColor_active);
-                .btn_name {
-                    display: none !important;
-                    visibility: hidden !important;
-                }
             }
         }
 
@@ -42,10 +38,6 @@
 
             &:active{
                 background: btnColor(whiteColor_active);
-                .btn_name {
-                    display: none !important;
-                    visibility: hidden !important;
-                }
             }
         }
 
@@ -56,10 +48,6 @@
             background: btnColor(whiteColor);
             &:active{
                 background: btnColor(whiteColor_active);
-                .btn_name {
-                    display: none !important;
-                    visibility: hidden !important;
-                }
             }
         }
 

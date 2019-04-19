@@ -24,12 +24,15 @@
             visibility: hidden;
 
             &:hover{
-            width: 116px;
-            background: btnColor(whiteColor_hover);
+                width: 116px;
+                background: btnColor(whiteColor_hover);
             }
             &:active{
-            width: 116px;
-            background: btnColor(whiteColor_active);
+                width: 116px;
+                background: btnColor(whiteColor_active);
+                .btn_name {
+                    display: block;
+                }
             }
         }
 
@@ -42,12 +45,15 @@
             visibility: hidden;
 
             &:hover{
-            width: 142px;
-            background: btnColor(whiteColor_hover);
+                width: 142px;
+                background: btnColor(whiteColor_hover);
             }
             &:active{
-            width: 142px;
-            background: btnColor(whiteColor_active);
+                width: 142px;
+                background: btnColor(whiteColor_active);
+                .btn_name {
+                    display: block;
+                }
             }
         }
 
