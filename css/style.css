@@ -314,7 +314,7 @@ b {
     height: calc(100vh - 320px);
     position: fixed !important;
     top: 320px;
-    background: #f2f2f2;
+    background: #fbfbfb;
     border-top: 1px solid #eee;
     overflow-x: hidden;
     overflow-y: auto; }
@@ -331,7 +331,7 @@ b {
       #info_table .item_name .info_label {
         width: calc(100vw - 32px);
         height: 32px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_name .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -339,8 +339,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_name .info_label span {
           position: relative !important;
@@ -350,14 +350,13 @@ b {
           font-size: 12px;
           font-weight: 400;
           line-height: 18px;
-          letter-spacing: 0.4px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.4px; }
       #info_table .item_name h4 {
         margin: 16px;
         width: calc(100vw - 56px);
         line-height: 28px !important;
         font-size: 20px !important;
-        color: #333;
+        color: #4b4b4b;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 4;
@@ -368,7 +367,7 @@ b {
       #info_table .item_brand .info_label {
         width: calc(100vw - 32px);
         height: 32px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_brand .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -376,8 +375,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_brand .info_label span {
           position: relative !important;
@@ -387,14 +386,13 @@ b {
           font-size: 12px;
           font-weight: 400;
           line-height: 18px;
-          letter-spacing: 0.4px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.4px; }
       #info_table .item_brand h6 {
         margin: 16px;
         width: calc(100vw - 56px);
         line-height: 24px !important;
         font-size: 16px !important;
-        color: #555;
+        color: #777;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
@@ -403,7 +401,7 @@ b {
       #info_table .item_size .info_label {
         width: calc(100vw - 32px);
         height: 32px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_size .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -411,8 +409,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_size .info_label span {
           position: relative !important;
@@ -422,14 +420,13 @@ b {
           font-size: 12px;
           font-weight: 400;
           line-height: 18px;
-          letter-spacing: 0.4px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.4px; }
       #info_table .item_size h6 {
         margin: 16px;
         width: calc(100vw - 56px);
         line-height: 24px !important;
         font-size: 16px !important;
-        color: #555;
+        color: #777;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
@@ -496,7 +493,7 @@ b {
             line-height: 20px;
             letter-spacing: 0.1px;
             text-align: right;
-            color: #4b4b4b; }
+            color: #7790A9; }
             #info_table .item_options .item_option .dropdown .dropdown-select:focus {
               outline: none; } }
 
@@ -1004,7 +1001,7 @@ b {
     width: 100vw;
     position: absolute !important;
     top: 320px;
-    background: #f2f2f2;
+    background: #fbfbfb;
     border-top: 1px solid #eee; }
     #info_table::-webkit-scrollbar {
       width: 6px; }
@@ -1019,7 +1016,7 @@ b {
       #info_table .item_name .info_label {
         width: calc(100vw - 32px);
         height: 32px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_name .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -1027,8 +1024,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_name .info_label span {
           position: relative !important;
@@ -1038,14 +1035,13 @@ b {
           font-size: 12px;
           font-weight: 400;
           line-height: 18px;
-          letter-spacing: 0.4px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.4px; }
       #info_table .item_name h4 {
         margin: 16px;
         width: calc(100vw - 56px);
         line-height: 28px !important;
         font-size: 20px !important;
-        color: #333;
+        color: #4b4b4b;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 4;
@@ -1056,7 +1052,7 @@ b {
       #info_table .item_brand .info_label {
         width: calc(100vw - 32px);
         height: 32px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_brand .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -1064,8 +1060,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_brand .info_label span {
           position: relative !important;
@@ -1075,14 +1071,13 @@ b {
           font-size: 12px;
           font-weight: 400;
           line-height: 18px;
-          letter-spacing: 0.4px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.4px; }
       #info_table .item_brand h6 {
         margin: 16px;
         width: calc(100vw - 56px);
         line-height: 24px !important;
         font-size: 16px !important;
-        color: #555;
+        color: #777;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
@@ -1091,7 +1086,7 @@ b {
       #info_table .item_size .info_label {
         width: calc(100vw - 32px);
         height: 32px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_size .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -1099,8 +1094,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_size .info_label span {
           position: relative !important;
@@ -1110,14 +1105,13 @@ b {
           font-size: 12px;
           font-weight: 400;
           line-height: 18px;
-          letter-spacing: 0.4px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.4px; }
       #info_table .item_size h6 {
         margin: 16px;
         width: calc(100vw - 56px);
         line-height: 24px !important;
         font-size: 16px !important;
-        color: #555;
+        color: #777;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
@@ -1184,7 +1178,7 @@ b {
             line-height: 20px;
             letter-spacing: 0.1px;
             text-align: right;
-            color: #4b4b4b; }
+            color: #7790A9; }
             #info_table .item_options .item_option .dropdown .dropdown-select:focus {
               outline: none; } }
 
@@ -1694,7 +1688,7 @@ b {
     position: fixed !important;
     top: 0;
     right: 0;
-    background: #f2f2f2;
+    background: #fbfbfb;
     border-left: 1px solid #eee;
     overflow-x: hidden;
     overflow-y: auto; }
@@ -1711,7 +1705,7 @@ b {
       #info_table .item_name .info_label {
         width: 364px;
         height: 40px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_name .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -1719,8 +1713,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_name .info_label span {
           position: relative !important;
@@ -1730,13 +1724,12 @@ b {
           font-size: 14px;
           font-weight: 500;
           line-height: 20px;
-          letter-spacing: 0.8px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.8px; }
       #info_table .item_name h4 {
         margin: 16px;
         width: 336px;
         font-size: 30px !important;
-        color: #333;
+        color: #4b4b4b;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 4;
@@ -1747,7 +1740,7 @@ b {
       #info_table .item_brand .info_label {
         width: 364px;
         height: 40px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_brand .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -1755,8 +1748,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_brand .info_label span {
           position: relative !important;
@@ -1766,11 +1759,10 @@ b {
           font-size: 14px;
           font-weight: 500;
           line-height: 20px;
-          letter-spacing: 0.8px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.8px; }
       #info_table .item_brand h6 {
         margin: 16px;
-        color: #555;
+        color: #777;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
@@ -1779,7 +1771,7 @@ b {
       #info_table .item_size .info_label {
         width: 364px;
         height: 40px;
-        border: 2px solid #7790A9; }
+        background: #f2f2f2; }
         #info_table .item_size .info_label span {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -1787,8 +1779,8 @@ b {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          color: #5C7898;
-          font-weight: 700;
+          color: #888;
+          font-weight: 300;
           text-transform: uppercase; }
         #info_table .item_size .info_label span {
           position: relative !important;
@@ -1798,11 +1790,10 @@ b {
           font-size: 14px;
           font-weight: 500;
           line-height: 20px;
-          letter-spacing: 0.8px;
-          font-weight: 700 !important; }
+          letter-spacing: 0.8px; }
       #info_table .item_size h6 {
         margin: 16px;
-        color: #555;
+        color: #777;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
@@ -1821,7 +1812,7 @@ b {
           line-height: 18px;
           letter-spacing: 0.4px;
           margin: 16px;
-          color: #555;
+          color: #7790A9;
           display: block;
           font-weight: 700; }
         #info_table .item_options .item_option .dropdown {
@@ -1869,7 +1860,7 @@ b {
             line-height: 24px;
             letter-spacing: 0.2px;
             text-align: right;
-            color: #4b4b4b; }
+            color: #777; }
             #info_table .item_options .item_option .dropdown .dropdown-select:focus {
               outline: none; } }
 

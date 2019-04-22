@@ -13,7 +13,7 @@
         @include size(100vw, null);
         @include position(absolute, 320px, null, null, null);
         @include scroll_bar;
-        background: #f2f2f2;
+        background: #fbfbfb;
         border-top: 1px solid #eee;
 
         .item_name {
@@ -25,7 +25,6 @@
                 span{
                     @include position(relative, 6px, null, null, 16px);
                     @include caption;
-                    font-weight: $bold !important;
                 }
             }
 
@@ -35,7 +34,7 @@
                 line-height: 28px !important;
 
                 font-size: 20px !important;
-                color: #333;
+                color: #4b4b4b;
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
@@ -52,7 +51,6 @@
                 span{
                     @include position(relative, 6px, null, null, 16px);
                     @include caption;
-                    font-weight: $bold !important;
                 }
             }
 
@@ -61,7 +59,7 @@
                 width:calc(100vw - 56px);
                 line-height: 24px !important;
                 font-size: 16px !important;
-                color: #555;
+                color: #777;
 
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -77,7 +75,6 @@
                 span{
                     @include position(relative, 6px, null, null, 16px);
                     @include caption;
-                    font-weight: $bold !important;
                 }
             }
 
@@ -86,7 +83,7 @@
                 width:calc(100vw - 56px);
                 line-height: 24px !important;
                 font-size: 16px !important;
-                color: #555;
+                color: #777;
 
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -148,7 +145,7 @@
                         
                         @include subtitle_02;
                         text-align: right;
-                        color:#4b4b4b;
+                        color:subColor(primary_light);
                             
                         &:focus {
                             outline:none;
