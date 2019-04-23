@@ -459,9 +459,8 @@ b {
           width: calc(100vw - 32px);
           height: 48px;
           display: block;
-          border-radius: 4px;
+          border-radius: 0px;
           padding-right: 24px;
-          background: #fafafa;
           /* deco-arrow */ }
           #info_table .item_options .item_option .dropdown:before {
             position: absolute !important;
@@ -482,10 +481,11 @@ b {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            border-radius: 4px;
+            border-radius: 0px;
             border: none;
             margin-bottom: 16px;
             padding: 0 24px;
+            background: #eee;
             cursor: pointer;
             font-family: "Noto Sans KR", sans-serif;
             font-size: 14px;
@@ -1144,9 +1144,8 @@ b {
           width: calc(100vw - 32px);
           height: 48px;
           display: block;
-          border-radius: 4px;
+          border-radius: 0px;
           padding-right: 24px;
-          background: #fafafa;
           /* deco-arrow */ }
           #info_table .item_options .item_option .dropdown:before {
             position: absolute !important;
@@ -1167,10 +1166,11 @@ b {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            border-radius: 4px;
+            border-radius: 0px;
             border: none;
             margin-bottom: 16px;
             padding: 0 24px;
+            background: #eee;
             cursor: pointer;
             font-family: "Noto Sans KR", sans-serif;
             font-size: 14px;
@@ -1826,9 +1826,8 @@ b {
           width: 364px;
           height: 64px;
           display: block;
-          border-radius: 4px;
+          border-radius: 0px;
           padding-right: 24px;
-          background: #fafafa;
           /* deco-arrow */ }
           #info_table .item_options .item_option .dropdown:before {
             position: absolute !important;
@@ -1849,10 +1848,11 @@ b {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            border-radius: 4px;
+            border-radius: 0px;
             border: none;
             margin-bottom: 16px;
             padding: 0 24px;
+            background: #eee;
             cursor: pointer;
             font-family: "Noto Sans KR", sans-serif;
             font-size: 16px;

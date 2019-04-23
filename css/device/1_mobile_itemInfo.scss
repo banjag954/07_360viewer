@@ -119,9 +119,8 @@
                     @include box-sizing(border-box);
                     @include size(calc(100vw - 32px), 48px);
                     display: block;
-                    border-radius: 4px;
+                    border-radius: 0px;
                     padding-right:24px;
-                    background: btnColor(whiteColor);
         
                     /* deco-arrow */
                     &:before {
@@ -139,10 +138,11 @@
                     .dropdown-select {
                         @include size(calc(100vw - 32px), 48px);
                         @include appearance(none);
-                        border-radius: 4px;
+                        border-radius: 0px;
                         border:none;
                         margin-bottom: 16px;
                         padding:0 24px;
+                        background: btnColor(whiteColor_active);
                         cursor: pointer;
                         
                         @include subtitle_02;
