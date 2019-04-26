@@ -2028,6 +2028,8 @@ b {
       #img_viewer .btn_fs:hover {
         width: 116px;
         background: #fff; }
+        #img_viewer .btn_fs:hover .btn_name {
+          display: block; }
       #img_viewer .btn_fs:active {
         width: 116px;
         background: #eee; }
@@ -2094,6 +2096,8 @@ b {
       #img_viewer .btn_exitfs:hover {
         width: 142px;
         background: #fff; }
+        #img_viewer .btn_exitfs:hover .btn_name {
+          display: block; }
       #img_viewer .btn_exitfs:active {
         width: 142px;
         background: #eee; }

@@ -26,6 +26,9 @@
             &:hover{
                 width: 116px;
                 background: btnColor(whiteColor_hover);
+                .btn_name {
+                    display: block;
+                }
             }
             &:active{
                 width: 116px;
@@ -47,6 +50,9 @@
             &:hover{
                 width: 142px;
                 background: btnColor(whiteColor_hover);
+                .btn_name {
+                    display: block;
+                }
             }
             &:active{
                 width: 142px;
