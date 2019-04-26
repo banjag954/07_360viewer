@@ -27,14 +27,14 @@
                 width: 116px;
                 background: btnColor(whiteColor_hover);
                 .btn_name {
-                    display: block;
+                    display: block !important;
                 }
             }
             &:active{
                 width: 116px;
                 background: btnColor(whiteColor_active);
                 .btn_name {
-                    display: block;
+                    display: block !important;
                 }
             }
         }

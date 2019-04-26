@@ -2029,12 +2029,12 @@ b {
         width: 116px;
         background: #fff; }
         #img_viewer .btn_fs:hover .btn_name {
-          display: block; }
+          display: block !important; }
       #img_viewer .btn_fs:active {
         width: 116px;
         background: #eee; }
         #img_viewer .btn_fs:active .btn_name {
-          display: block; }
+          display: block !important; }
     #img_viewer .btn_exitfs {
       width: 40px;
       height: 40px;
