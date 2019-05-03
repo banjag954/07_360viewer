@@ -1,0 +1,137 @@
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  opacity: 0;
+  float: left;
+  position: fixed !important;
+  top: 0;
+  left: 0; }
+  #loading .loading_contents {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center; }
+    #loading .loading_contents .loading_content {
+      -webkit-transform: rotate3d(2, 4, 2, 24deg) !important;
+      -moz-transform: rotate3d(2, 4, 2, 24deg) !important;
+      -ms-transform: rotate3d(2, 4, 2, 24deg) !important;
+      transform: rotate3d(2, 4, 2, 24deg) !important;
+      width: 240px;
+      height: 48px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      display: block;
+      transform: rotate3d(1, 0.2, 1, 30deg);
+      margin-bottom: 8px;
+      background: #ced6e0;
+      color: #5C7898;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.5;
+      text-transform: uppercase;
+      text-shadow: 0 6px 0px rgba(22, 65, 76, 0.08); }

@@ -13,12 +13,24 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+html {
+  font-size: 16px; }
+
 body {
-  width: 100vw;
-  height: 100vh;
-  background: #f2f2f2 !important;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  overflow: hidden; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .open {
   display: block !important;
@@ -2227,3 +2239,1619 @@ b {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none; } }
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  opacity: 0;
+  float: left;
+  position: fixed !important;
+  top: 0;
+  left: 0; }
+  #loading .loading_contents {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center; }
+    #loading .loading_contents .loading_content {
+      -webkit-transform: rotate3d(2, 4, 2, 24deg) !important;
+      -moz-transform: rotate3d(2, 4, 2, 24deg) !important;
+      -ms-transform: rotate3d(2, 4, 2, 24deg) !important;
+      transform: rotate3d(2, 4, 2, 24deg) !important;
+      width: 240px;
+      height: 48px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      display: block;
+      transform: rotate3d(1, 0.2, 1, 30deg);
+      margin-bottom: 8px;
+      background: #ced6e0;
+      color: #5C7898;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.5;
+      text-transform: uppercase;
+      text-shadow: 0 6px 0px rgba(22, 65, 76, 0.08); }
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; }
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px; }
+
+.horizontal-scroll {
+  width: 100vh;
+  height: 100vw;
+  -webkit-transform: rotate(-90deg) translate3d(0, -100vh, 0) !important;
+  -moz-transform: rotate(-90deg) translate3d(0, -100vh, 0) !important;
+  -ms-transform: rotate(-90deg) translate3d(0, -100vh, 0) !important;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0) !important;
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .horizontal-scroll > * {
+    -webkit-transform: rotate(90deg) translate3d(0, -100vh, 0) !important;
+    -moz-transform: rotate(90deg) translate3d(0, -100vh, 0) !important;
+    -ms-transform: rotate(90deg) translate3d(0, -100vh, 0) !important;
+    transform: rotate(90deg) translate3d(0, -100vh, 0) !important;
+    transform-origin: left top; }
+  .horizontal-scroll__block {
+    width: 100vw;
+    height: 100vh;
+    margin-top: calc(100vw - 100vh); }
+    .horizontal-scroll__block:first-child {
+      margin-top: 0 !important; }
+    .horizontal-scroll__block:nth-child(2) {
+      width: 130vw;
+      height: 100vh; }
+    .horizontal-scroll__block:nth-child(3) {
+      margin-top: calc(130vw - 100vh) !important; }
+    .horizontal-scroll__block .background {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+
+#pageStart {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  display: none; }
+
+#navis #left_navigation {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 6vw;
+  height: 100vh;
+  -webkit-box-shadow: 2px 0px 8px rgba(22, 65, 76, 0.24);
+  -moz-box-shadow: 2px 0px 8px rgba(22, 65, 76, 0.24);
+  box-shadow: 2px 0px 8px rgba(22, 65, 76, 0.24);
+  background: #fff;
+  border-left: 1px solid #eee;
+  z-index: 1000; }
+  #navis #left_navigation .btn_home {
+    width: 5vw;
+    height: 5vw;
+    position: absolute !important;
+    top: 0.5vw;
+    left: 0.5vw;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    border: 3px solid #4b4b4b;
+    display: block;
+    cursor: pointer; }
+    #navis #left_navigation .btn_home .btn_text {
+      position: absolute !important;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      font-family: "Noto Sans KR", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 1.1vw;
+      padding: 0.5vw;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #4b4b4b;
+      font-weight: 700; }
+    #navis #left_navigation .btn_home:hover, #navis #left_navigation .btn_home:active {
+      width: 5vw;
+      height: 5vw;
+      background: #4b4b4b; }
+      #navis #left_navigation .btn_home:hover .btn_text, #navis #left_navigation .btn_home:active .btn_text {
+        color: #fafafa; }
+  #navis #left_navigation .nav_title {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important; }
+    #navis #left_navigation .nav_title img {
+      width: 1.6vw;
+      height: 12vw;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+  #navis #left_navigation .btn_logo {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    width: 6vw;
+    height: 5.6vw;
+    background: #519EB2;
+    cursor: pointer; }
+    #navis #left_navigation .btn_logo .img_wrap img {
+      position: absolute !important;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      width: 32px;
+      height: 25px; }
+    #navis #left_navigation .btn_logo:hover, #navis #left_navigation .btn_logo:active {
+      background: #67AFC2; }
+
+#navis #bottom_navigation {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: calc(48% - 1.6vw);
+  height: 5.6vw;
+  background: #70B9CC;
+  z-index: 500; }
+  #navis #bottom_navigation .bottom_text_wrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute !important;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    display: inline-block; }
+    #navis #bottom_navigation .bottom_text_wrap .bottom_text {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      font-size: 1vw;
+      color: #fafafa;
+      font-weight: 400; }
+  #navis #bottom_navigation .bottom_icon_wrap {
+    position: absolute !important;
+    top: 50%;
+    right: 3.2%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important; }
+    #navis #bottom_navigation .bottom_icon_wrap .bottom_icon {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 2vw;
+      height: 2vw;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      fill: #fafafa; }
+  #navis #bottom_navigation::after {
+    position: fixed !important;
+    bottom: -5.6vw;
+    left: 0;
+    width: calc(48% - 1.6vw);
+    height: 5.6vw;
+    -webkit-transition: bottom 0.3s;
+    -moz-transition: bottom 0.3s;
+    -ms-transition: bottom 0.3s;
+    -o-transition: bottom 0.3s;
+    content: "";
+    background: #B8E7E2;
+    z-index: -1; }
+  #navis #bottom_navigation:hover::after, #navis #bottom_navigation:active::after {
+    position: fixed !important;
+    bottom: 0;
+    left: 0; }
+  #navis #bottom_navigation:hover .bottom_text, #navis #bottom_navigation:active .bottom_text {
+    color: #519EB2; }
+  #navis #bottom_navigation:hover .bottom_icon, #navis #bottom_navigation:active .bottom_icon {
+    fill: #519EB2; }
+
+#navis #bg_check {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; }
+  #navis #bg_check .line {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100vw;
+    height: 2px;
+    background: #fafafa; }
+  #navis #bg_check .square {
+    width: 20vw;
+    height: 100vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+    border: 1px solid #fafafa;
+    background: #fff; }
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#section_01 .sub_title_01 {
+  position: absolute !important;
+  top: 12%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  #section_01 .sub_title_01 span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-size: 1.4vw !important;
+    color: #4b4b4b; }
+
+#section_01 .main_title_01 {
+  position: absolute !important;
+  top: 22%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  #section_01 .main_title_01 h2 {
+    font-size: 4.8vw !important;
+    color: #4b4b4b; }
+
+#section_01 .btn_demo_wrap_01 {
+  position: absolute !important;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  width: 16vw;
+  height: 3.6vw;
+  -webkit-box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+  -moz-box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+  box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+  background: linear-gradient(45deg, #324e63, #383e44); }
+  #section_01 .btn_demo_wrap_01 .btn_demo {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 16vw;
+    height: 3.6vw;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 3.65vw;
+    text-transform: uppercase;
+    cursor: pointer; }
+  #section_01 .btn_demo_wrap_01:hover {
+    background: linear-gradient(45deg, #415e73, #40474e);
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32); }
+  #section_01 .btn_demo_wrap_01:active {
+    background: linear-gradient(45deg, #253E52, #2D3236);
+    -webkit-box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48);
+    -moz-box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48);
+    box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48); }
+
+#section_01 .main_img_01 {
+  position: absolute !important;
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-animation-name: img_ani;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-name: img_ani;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-name: img_ani;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-name: img_ani;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  z-index: 10; }
+
+@-webkit-keyframes img_ani {
+  from {
+    top: 62%; }
+  to {
+    top: 64%; } }
+
+@-moz-keyframes img_ani {
+  from {
+    top: 62%; }
+  to {
+    top: 64%; } }
+
+@-ms-keyframes img_ani {
+  #section_01 .main_img_01 from {
+    top: 62%; }
+  #section_01 .main_img_01 to {
+    top: 64%; } }
+
+@keyframes img_ani {
+  from {
+    top: 62%; }
+  to {
+    top: 64%; } }
+  #section_01 .main_img_01 img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 18vw;
+    height: 18vw; }
+
+#section_01 .main_img_shadow_01 {
+  position: absolute !important;
+  top: 82%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-animation-name: img_shadow;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-name: img_shadow;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-name: img_shadow;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-name: img_shadow;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes img_shadow {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.72; } }
+
+@-moz-keyframes img_shadow {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.72; } }
+
+@-ms-keyframes img_shadow {
+  #section_01 .main_img_shadow_01 from {
+    opacity: 1; }
+  #section_01 .main_img_shadow_01 to {
+    opacity: 0.72; } }
+
+@keyframes img_shadow {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.72; } }
+  #section_01 .main_img_shadow_01 img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 300px;
+    height: 52px; }
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#section_02 .main_img_wrap_02 {
+  position: absolute !important;
+  top: 50%;
+  left: 12%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-animation-name: card_01;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-name: card_01;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-name: card_01;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-name: card_01;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  z-index: 10; }
+
+@-webkit-keyframes card_01 {
+  from {
+    top: 49.5%; }
+  to {
+    top: 50%; } }
+
+@-moz-keyframes card_01 {
+  from {
+    top: 49.5%; }
+  to {
+    top: 50%; } }
+
+@-ms-keyframes card_01 {
+  #section_02 .main_img_wrap_02 from {
+    top: 49.5%; }
+  #section_02 .main_img_wrap_02 to {
+    top: 50%; } }
+
+@keyframes card_01 {
+  from {
+    top: 49.5%; }
+  to {
+    top: 50%; } }
+  #section_02 .main_img_wrap_02 .rect_front {
+    position: absolute !important;
+    top: 40%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    width: 20vw;
+    height: 24vw;
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    border-radius: 4px;
+    background: #fff; }
+    #section_02 .main_img_wrap_02 .rect_front img {
+      position: absolute !important;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      width: 20vw;
+      height: 24vw;
+      border-radius: 4px; }
+  #section_02 .main_img_wrap_02 .rect_back {
+    width: 20vw;
+    height: 24vw;
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    border-radius: 4px;
+    background: linear-gradient(45deg, #68839F, #CDE7ED); }
+
+#section_02 .main_title_wrap_02 {
+  position: absolute !important;
+  top: 48%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; }
+  #section_02 .main_title_wrap_02 span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: underline;
+    font-style: italic;
+    color: #4b4b4b;
+    margin-bottom: 8px; }
+  #section_02 .main_title_wrap_02 h2 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 3.4vw;
+    line-height: 5.6vw;
+    color: #333; }
+    #section_02 .main_title_wrap_02 h2 g {
+      font-weight: 900;
+      background: linear-gradient(45deg, #88CDDF, #416183);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+#section_02 .img_top_wrap_02 {
+  position: absolute !important;
+  top: 34%;
+  right: 4%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-animation-name: card_02;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-name: card_02;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-name: card_02;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-name: card_02;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes card_02 {
+  from {
+    top: 33.5%; }
+  to {
+    top: 34.5%; } }
+
+@-moz-keyframes card_02 {
+  from {
+    top: 33.5%; }
+  to {
+    top: 34.5%; } }
+
+@-ms-keyframes card_02 {
+  #section_02 .img_top_wrap_02 from {
+    top: 33.5%; }
+  #section_02 .img_top_wrap_02 to {
+    top: 34.5%; } }
+
+@keyframes card_02 {
+  from {
+    top: 33.5%; }
+  to {
+    top: 34.5%; } }
+  #section_02 .img_top_wrap_02 .rect_front {
+    position: absolute !important;
+    top: 40%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    width: 16vw;
+    height: 20vw;
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    border-radius: 4px;
+    background: #fff; }
+    #section_02 .img_top_wrap_02 .rect_front img {
+      position: absolute !important;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      width: 16vw;
+      height: 20vw;
+      border-radius: 4px; }
+  #section_02 .img_top_wrap_02 .rect_back {
+    width: 16vw;
+    height: 20vw;
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    border-radius: 4px;
+    background: linear-gradient(45deg, #975031, #E4AC7A); }
+
+#section_02 .img_bottom_wrap_02 {
+  position: absolute !important;
+  top: 80%;
+  right: 24%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-animation-name: card_03;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-name: card_03;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-name: card_03;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-name: card_03;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes card_03 {
+  from {
+    top: 79.5%; }
+  to {
+    top: 80%; } }
+
+@-moz-keyframes card_03 {
+  from {
+    top: 79.5%; }
+  to {
+    top: 80%; } }
+
+@-ms-keyframes card_03 {
+  #section_02 .img_bottom_wrap_02 from {
+    top: 79.5%; }
+  #section_02 .img_bottom_wrap_02 to {
+    top: 80%; } }
+
+@keyframes card_03 {
+  from {
+    top: 79.5%; }
+  to {
+    top: 80%; } }
+  #section_02 .img_bottom_wrap_02 .rect_front {
+    position: absolute !important;
+    top: 40%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    width: 10vw;
+    height: 12vw;
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    border-radius: 4px;
+    background: #fff; }
+    #section_02 .img_bottom_wrap_02 .rect_front img {
+      position: absolute !important;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      width: 6vw;
+      height: 10vw; }
+  #section_02 .img_bottom_wrap_02 .rect_back {
+    width: 10vw;
+    height: 12vw;
+    -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+    border-radius: 4px;
+    background: linear-gradient(45deg, #463197, #7AABE4); }
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#section_03 .main_wrap_03 {
+  position: absolute !important;
+  top: 0;
+  left: 0%;
+  width: 50vw;
+  height: 100vh; }
+  #section_03 .main_wrap_03 .main_title_wrap {
+    position: relative !important;
+    top: 14%;
+    left: 16%; }
+    #section_03 .main_wrap_03 .main_title_wrap h2 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 4.4vw;
+      line-height: 5.6vw;
+      font-style: italic;
+      color: #519EB2; }
+  #section_03 .main_wrap_03 .sub_title_wrap {
+    position: relative !important;
+    top: 20%;
+    left: 18%; }
+    #section_03 .main_wrap_03 .sub_title_wrap .sub_title_01 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 2.4vw;
+      font-size: 1.6vw;
+      line-height: 2.8vw;
+      color: #333; }
+    #section_03 .main_wrap_03 .sub_title_wrap .descLine {
+      position: relative !important;
+      top: 50%;
+      left: 34%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      width: 34vw;
+      height: 2px;
+      background: #67AFC2;
+      margin-bottom: 2.4vw; }
+    #section_03 .main_wrap_03 .sub_title_wrap .sub_title_02 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 1.2vw;
+      line-height: 2.4vw;
+      color: #4b4b4b; }
+
+#section_03 .img_wrap_03 {
+  position: absolute !important;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; }
+  #section_03 .img_wrap_03 img {
+    -webkit-box-shadow: 4px 0px 32px rgba(22, 65, 76, 0.24);
+    -moz-box-shadow: 4px 0px 32px rgba(22, 65, 76, 0.24);
+    box-shadow: 4px 0px 32px rgba(22, 65, 76, 0.24);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 60vh;
+    border-radius: 8px; }
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#section_04 .main_wrap_04 {
+  position: absolute !important;
+  top: 0;
+  left: 0%;
+  width: 80vw;
+  height: 100vh; }
+  #section_04 .main_wrap_04 .main_title_wrap_04 {
+    position: relative !important;
+    top: 24%;
+    left: 16%; }
+    #section_04 .main_wrap_04 .main_title_wrap_04 h2 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 4.4vw;
+      line-height: 5.6vw;
+      font-style: italic;
+      color: #4b4b4b; }
+  #section_04 .main_wrap_04 .sub_title_wrap_04 {
+    position: relative !important;
+    top: 29%;
+    left: 18%; }
+    #section_04 .main_wrap_04 .sub_title_wrap_04 .sub_title {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 2.4vw;
+      font-size: 1.6vw;
+      line-height: 2.8vw;
+      color: #333; }
+
+#section_04 .sub_wrap_04 {
+  position: absolute !important;
+  right: -10%;
+  bottom: 16%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; }
+  #section_04 .sub_wrap_04 .btn_demo_wrap_04 {
+    width: 16vw;
+    height: 3.6vw;
+    -webkit-box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+    background: linear-gradient(45deg, #324e63, #383e44);
+    float: left;
+    display: inline-block;
+    margin-right: 32px; }
+    #section_04 .sub_wrap_04 .btn_demo_wrap_04 .btn_demo {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 16vw;
+      height: 3.6vw;
+      position: absolute !important;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1vw;
+      font-weight: 500;
+      line-height: 3.65vw;
+      text-transform: uppercase;
+      cursor: pointer; }
+    #section_04 .sub_wrap_04 .btn_demo_wrap_04:hover {
+      background: linear-gradient(45deg, #415e73, #40474e);
+      -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+      -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+      box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32); }
+    #section_04 .sub_wrap_04 .btn_demo_wrap_04:active {
+      background: linear-gradient(45deg, #253E52, #2D3236);
+      -webkit-box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48);
+      -moz-box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48);
+      box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48); }
+  #section_04 .sub_wrap_04 .btn_contact_wrap_04 {
+    width: 16vw;
+    height: 3.6vw;
+    -webkit-box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+    -moz-box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+    box-shadow: 0px 4px 8px rgba(22, 65, 76, 0.32);
+    background: #67AFC2;
+    display: inline-block; }
+    #section_04 .sub_wrap_04 .btn_contact_wrap_04 .btn_contact {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 16vw;
+      height: 3.6vw;
+      position: absolute !important;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1vw;
+      font-weight: 500;
+      line-height: 3.65vw;
+      text-transform: uppercase;
+      cursor: pointer; }
+    #section_04 .sub_wrap_04 .btn_contact_wrap_04:hover {
+      -webkit-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+      -moz-box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32);
+      box-shadow: 0px 4px 16px rgba(22, 65, 76, 0.32); }
+    #section_04 .sub_wrap_04 .btn_contact_wrap_04:active {
+      -webkit-box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48);
+      -moz-box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48);
+      box-shadow: 0px 2px 4px rgba(22, 65, 76, 0.48); }

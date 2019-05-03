@@ -1,0 +1,196 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_extends';
+
+::-webkit-scrollbar {
+    @include size(1px, 1px);
+}
+
+::-webkit-scrollbar-button {
+    @include size(1px, 1px);
+}
+
+$color-orange: #F37748;
+
+.horizontal-scroll {
+    @include size(100vh,100vw);
+    @include transform(rotate(-90deg) translate3d(0,-100vh,0));
+    transform-origin: right top;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+  > * {
+    @include transform(rotate(90deg) translate3d(0,-100vh,0));
+    transform-origin: left top;
+  }
+
+  &__block {
+    @include size(100vw,100vh);
+    margin-top:calc(100vw - 100vh);
+    &:first-child{
+        margin-top:0 !important;
+    }
+    &:nth-child(2){
+        @include size(130vw,100vh);
+    }
+    &:nth-child(3){
+        margin-top:calc(130vw - 100vh) !important;
+    }
+    .background {
+        @include position(absolute,0,0,0,0);
+    }
+  }
+}
+
+#pageStart {
+    @include size(100%,100%);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#navis{
+    #left_navigation{
+        @include position(fixed, 0, null, null, 0);
+        @include size(6vw, 100vh);
+        @include box-shadow(2px, 0px, 8px, rgba(22,65,76,0.24));
+        background: bgColor(primary);
+        border-left: 1px solid #eee;
+        z-index: 1000;
+
+        .btn_home {
+            @include size (5vw, 5vw);
+            @include position(absolute, 0.5vw, null, null, 0.5vw);
+            @include transition(transition, background-color 0.3s);
+            border: 3px solid #4b4b4b;
+            display: block;
+            cursor: pointer;
+
+            .btn_text{
+                @include position(absolute, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                @include subtitle_01;
+                @include no-select;
+                font-size: 1.1vw;
+                padding: 0.5vw;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #4b4b4b;
+                font-weight: $bold;
+            }
+
+            &:hover, &:active {
+                @include size (5vw, 5vw);
+                background: #4b4b4b;
+                .btn_text{
+                color: btnColor(whiteColor);
+                }
+            }
+        }
+
+        .nav_title {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            img{
+                // @include size (26px, 210px);
+                @include size (1.6vw, 12vw);
+                @include no-select;
+            }
+        }
+
+        .btn_logo{
+            @include position(absolute, null, null, 0, 0);
+            @include size(6vw, 5.6vw);
+            background: color(mainColor_dark);
+            cursor: pointer;
+            .img_wrap{
+                img{
+                    @include position(absolute, 50%, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+                    @include size(32px, 25px);
+                }
+            }
+            &:hover, &:active{
+                background: color(mainColor);
+            }
+        }
+    }
+
+    #bottom_navigation{
+        @include position(fixed, null, null, 0, 0);
+        @include size(calc(48% - 1.6vw), 5.6vw);
+        background: color(mainColor_light);
+        z-index: 500;
+        
+        .bottom_text_wrap{
+            @include box-sizing(border-box);
+            @include position(absolute, 50%, null, null, 40%);
+            @include transform(translate(-50%, -50%));
+            display: inline-block;
+
+            .bottom_text{
+                @include no-select;
+                @include transition(transition, all 0.3s);
+                font-size: 1vw;
+                color: #fafafa;
+                font-weight: $regular;
+            }
+        }
+
+        .bottom_icon_wrap{
+            @include position(absolute, 50%, 3.2%, null, null);
+            @include transform(translate(-50%, -50%));
+            .bottom_icon{
+                @include no-select;
+                @include size(2vw, 2vw);
+                @include transition(transition, all 0.3s);
+                fill:btnColor(whiteColor);
+            }
+        }
+
+        &::after {
+            @include position(fixed, null, null, -5.6vw, 0);
+            @include size(calc(48% - 1.6vw), 5.6vw);
+            @include transition(transition, bottom 0.3s);
+            content:"";
+            background: #B8E7E2;
+            z-index: -1;
+        }
+
+        &:hover, &:active {
+
+            &::after{
+                @include position(fixed, null, null, 0, 0);
+            }
+            .bottom_text{
+                color:color(mainColor_dark);
+            }
+            .bottom_icon{
+                fill:color(mainColor_dark);
+            }
+        }
+    }
+
+    #bg_check {
+        @include position(fixed,0,0,0,0);
+        z-index: -1;
+        .line{
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 2px);
+            background: #fafafa;
+        }
+        .square{
+            @include size(20vw, 100vh);
+            @include box-sizing(border-box);
+            float: left;
+            display: inline-block;
+            border: 1px solid #fafafa;
+            background: bgColor(primary); 
+        }
+    }
+}

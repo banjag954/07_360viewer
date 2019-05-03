@@ -5,16 +5,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>360HD_Viewer</title>
+    <title>Pr_360HDViewer</title>
     <link rel="stylesheet" href="./css/style.css">
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+
+    <!--scrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script> 
 </head>
 
-<body style="background-color:#333;">
-
-    <a href="./viewer.html">데모 들어가기</a>
+<body>
     
-</body>
+<section id="loading">
+    <div class="loading_contents">
+        <h5 class="loading_content">More Intuitive</h5>
+        <h5 class="loading_content">More Real</h5>
+        <h5 class="loading_content">More Appealing</h5>
+    </div>
+</section>
 
+<div id="pageStart">
+
+<main id="navis">
+    <section id="left_navigation">
+        <div class="btn_home">
+            <a class="btn_text" href="https://www.archisketch.com">GO<br>HOME</a>
+        </div>
+        <div class="nav_title">
+            <img src="./img/nav_text@3x.png" alt="">
+        </div>
+        <div class="btn_logo">
+            <a class="img_wrap" href="https://www.archisketch.com">
+                <img src="./img/logo_white@3x.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section id="bottom_navigation">
+        <div class="bottom_text_wrap">
+            <span class="bottom_text">Countinue by using scrolling down</span>
+        </div>
+        <div class="bottom_icon_wrap">
+            <svg class="bottom_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12,1.993C6.486,1.994,2,6.48,2,11.994c0,5.513,4.486,9.999,10,10c5.514,0,10-4.486,10-10S17.515,1.994,12,1.993z M12,19.994c-4.411-0.001-8-3.59-8-8c0-4.411,3.589-8,8-8.001c4.411,0.001,8,3.59,8,8.001S16.411,19.994,12,19.994z"/><path d="M13 8L11 8 11 12 7.991 12 11.996 16.005 16 12 13 12z"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="bg_check">
+        <div class="line"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </section>
+</main>
+
+<main class="horizontal-scroll">
+
+    <section class="horizontal-scroll__block" id="section_01">
+        <div class="background">
+            <div class="sub_title_01">
+                <span>Show the best of your products through all angles</span>
+            </div>
+            <div class="main_title_01">
+                <h2>360° Image Viewer</h2>
+            </div>
+            <div class="btn_demo_wrap_01" >
+                <a class="btn_demo" href="./viewer.html">
+                    Watch the demo
+                </a>
+            </div>
+            <div class="main_img_01" id="card_01">
+                <img src="./img/section_01_img.png" alt="">
+            </div>
+            <div class="main_img_shadow_01">
+                <img src="./img/section_01_shadow@3x.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section class="horizontal-scroll__block" id="section_02">
+        <div class="background">
+            <div class="main_img_wrap_02">
+                <div class="rect_front">
+                    <img src="./img/section_02_main@2x.jpg" alt="">
+                </div>
+                <div class="rect_back"></div>
+            </div>
+        
+            <div class="main_title_wrap_02">
+                <span>Our 360° Image Viewer</span>
+                <h2><g> Shows</g> much more than a simple image.</h2>
+                <h2><g> Allows</g> the powerful users experience.</h2>
+                <h2><g> Imagine</g> your product vividly.</h2>
+            </div>
+        
+            <div class="img_top_wrap_02" id="card_02">
+                <div class="rect_front">
+                    <img src="./img/section_02_chair@2x.jpg" alt="">
+                </div>
+                <div class="rect_back"></div>
+            </div>
+        
+            <div class="img_bottom_wrap_02" id="card_03">
+                <div class="rect_front">
+                    <img src="./img/section_02_light@2x.jpg" alt="">
+                </div>
+                <div class="rect_back"></div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="horizontal-scroll__block" id="section_03">
+        <div class="background">
+            <div class="main_wrap_03">
+                <div class="main_title_wrap">
+                    <h2>Publishable<br>through all devices</h2>
+                </div>
+                <div class="sub_title_wrap">
+                    <h5 class="sub_title_01">
+                        Apply powerful Omni-Contents<br>
+                        that crosses the boundary between On/Offline<br>
+                        to all devices and platforms.
+                    </h5>
+                    <div class="descLine"></div>
+                    <span class="sub_title_02">
+                        Install visually enhanced contents<br>
+                        to various product pages, domains, and in-store systems.
+                    </span>
+                </div>
+            </div>
+
+            <div class="img_wrap_03" data-offset="8">
+                <img data-offset="-16" class="img_03"src="./img/section_03_bg.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal-scroll__block" id="section_04">
+        <div class="background">
+            <div class="main_wrap_04">
+                <div class="main_title_wrap_04">
+                    <h2>Experience its feel through the Demo<br>
+                        and let us know.</h2>
+                </div>
+                <div class="sub_title_wrap_04">
+                    <h5 class="sub_title">
+                        More intuitive. More real. And More appealing.<br>
+                        Everything that is required of powerful shoppping experience<br>
+                        is provided through the service.<br>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="sub_wrap_04">
+                <div class="btn_demo_wrap_04" >
+                    <a class="btn_demo" href="./viewer.html">
+                        Watch the demo
+                    </a>
+                </div>
+
+                <div class="btn_contact_wrap_04" >
+                    <a class="btn_contact" href="https://www.archisketch.com/partnership">
+                        Contact us
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</mian>
+
+</div>
+
+<script src="js/360viewersite.js"></script>
+</body>
 </html>

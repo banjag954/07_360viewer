@@ -9,7 +9,7 @@
 // _Partials : manage design Components ( Popup, button, navigation bar ..etc )
 @import './partials/_extends';
 
-// device
+// 360viewer
 @import './360viewer/1_mobile_itemInfo',
         './360viewer/1_mobile_viewer',
         './360viewer/2_tablet_itemInfo',
@@ -17,4 +17,12 @@
         './360viewer/3_pc_itemInfo',
         './360viewer/3_pc_viewer';
 
+// 360viewer
+@import './webSite/loading',
+        './webSite/web_common',
+        './webSite/section_01',
+        './webSite/section_02',
+        './webSite/section_03',
+        './webSite/section_04';  
+  
 // Third-party

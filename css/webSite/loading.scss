@@ -1,0 +1,40 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_extends';
+
+
+#loading {
+    @include size(100vw, 100vh);
+    background:#f2f2f2;
+    opacity: 0;
+    float: left;
+    @include position(fixed, 0, null, null, 0);
+
+    .loading_contents {
+        @include position(absolute, 50%, null, null, 50%);
+        @include transform(translate(-50%, -50%));
+        text-align: center;
+
+        .loading_content {
+            @include transform(rotate3d(2, 4, 2, 24deg));
+            @include size(240px, 48px);
+            @include no-select;
+            display: block;
+            transform: rotate3d(1,0.2,1, 30deg);
+            margin-bottom: 8px;
+            background: subColor(secondary_light);
+            
+            
+            color:subColor(primary_dark);
+            font-weight: $bold;
+            line-height: 48px;
+            letter-spacing: -0.5;
+            text-transform: uppercase;
+            text-shadow: 0 6px 0px rgba(22, 65, 76, 0.08);
+        }
+    }
+}

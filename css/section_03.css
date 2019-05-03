@@ -1,0 +1,175 @@
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+/* ==========================================================================
+   Font Resource
+   ========================================================================== */
+/* Google font*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_black_webfont.woff2") format("woff2"), url("../font/notosanskr_black_webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_bold_webfont.woff2") format("woff2"), url("../font/notosanskr_bold_webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_medium_webfont.woff2") format("woff2"), url("../font/notosanskr_medium_webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../../font/otosanskr_regular_webfont.woff2") format("woff2"), url("../../font/notosanskr_regular_webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_light_webfont.woff2") format("woff2"), url("../font/notosanskr_light_webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr_thin_webfont.woff2") format("woff2"), url("../font/notosanskr_thin_webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+/* ==========================================================================
+   Font setting
+   ========================================================================== */
+body {
+  font-family: "Noto Sans KR", sans-serif; }
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px; }
+
+b {
+  font-weight: 700; }
+
+#section_03 .main_wrap_03 {
+  position: absolute !important;
+  top: 0;
+  left: 0%;
+  width: 50vw;
+  height: 100vh; }
+  #section_03 .main_wrap_03 .main_title_wrap {
+    position: relative !important;
+    top: 14%;
+    left: 16%; }
+    #section_03 .main_wrap_03 .main_title_wrap h2 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 4.4vw;
+      line-height: 5.6vw;
+      font-style: italic;
+      color: #519EB2; }
+  #section_03 .main_wrap_03 .sub_title_wrap {
+    position: relative !important;
+    top: 20%;
+    left: 18%; }
+    #section_03 .main_wrap_03 .sub_title_wrap .sub_title_01 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 2.4vw;
+      font-size: 1.6vw;
+      line-height: 2.8vw;
+      color: #333; }
+    #section_03 .main_wrap_03 .sub_title_wrap .descLine {
+      position: relative !important;
+      top: 50%;
+      left: 34%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      width: 34vw;
+      height: 2px;
+      background: #67AFC2;
+      margin-bottom: 2.4vw; }
+    #section_03 .main_wrap_03 .sub_title_wrap .sub_title_02 {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 1.2vw;
+      line-height: 2.4vw;
+      color: #4b4b4b; }
+
+#section_03 .img_wrap_03 {
+  position: absolute !important;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; }
+  #section_03 .img_wrap_03 img {
+    -webkit-box-shadow: 4px 0px 32px rgba(22, 65, 76, 0.24);
+    -moz-box-shadow: 4px 0px 32px rgba(22, 65, 76, 0.24);
+    box-shadow: 4px 0px 32px rgba(22, 65, 76, 0.24);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 60vh;
+    border-radius: 8px; }
