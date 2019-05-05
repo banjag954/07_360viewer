@@ -11,7 +11,7 @@
 
     #section_04{
         @include position(relative,null,null,null,null);
-        @include size(100vw, 100vh);
+        @include size(100vw, 680px);
 
         .main_wrap_04{
             @include position(absolute, 18%, null, null, -4%);
