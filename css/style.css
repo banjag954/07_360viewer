@@ -5281,11 +5281,11 @@ b {
           -ms-user-select: none;
           user-select: none;
           margin-bottom: 2.4vw;
-          font-size: 1.2vw;
+          font-size: 10px;
           color: #777; }
     #section_04 .sub_wrap_04 {
       position: absolute !important;
-      bottom: 0;
+      bottom: -4%;
       left: 68%;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;

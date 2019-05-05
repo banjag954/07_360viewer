@@ -44,14 +44,14 @@
                 .copyright{
                     @include no-select;
                     margin-bottom: 2.4vw;
-                    font-size: 1.2vw;
+                    font-size: 10px;
                     color:#777;
                 }
             }
         }
 
         .sub_wrap_04{
-            @include position(absolute, null, null, 0, 68%);
+            @include position(absolute, null, null, -4%, 68%);
             @include transform(translate(-50%, -50%));
 
             .btn_demo_wrap_04{
