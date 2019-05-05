@@ -1,0 +1,287 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_extends';
+
+@media only screen and (max-width: 480px) {
+
+    #section_01{
+        @include position(relative,null,null,null,null);
+        @include size(100vw, 100vh);
+
+        .sub_title_01{
+            @include position(absolute, 24%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            text-align: center;
+            span{
+                @include no-select;
+                @include caption;
+                @include size(100%, null);
+                color:#4b4b4b;
+            }
+        }
+        .main_title_01{
+            @include position(absolute, 32%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include no-select;
+            h2{
+                font-size: 20px !important;
+                line-height: 24px;
+                color:#4b4b4b;
+            }
+        }
+
+        .btn_demo_wrap_01{
+            @include position(absolute, 40%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(240px, 48px);
+            @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+            background: btnColor(darkColor);
+            .btn_demo{
+                @include no-select;
+                @include size(240px, 48px);
+                @include position(absolute, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                @include button;
+                text-align: center;
+                text-decoration: none;
+                color:#fff;
+                text-transform: uppercase;
+                line-height: 48px;
+                cursor: pointer;
+            }
+            &:active, &:focus {
+                background: btnColor(darkColor_active);
+                @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+            }
+        }
+
+        .main_img_01{
+            @include position(absolute, 66%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include animation (img_ani, null, 1s, ease-in-out, infinite, alternate);
+            @include keyframes(img_ani){
+                from{
+                    top: 66%;
+                }
+                to{
+                    top: 68%;
+                }
+            }
+            z-index: 10; 
+            img{
+                @include no-select;
+                @include size(200px, 200px);
+            }
+        }
+
+        .main_img_shadow_01{
+            @include position(absolute, 86%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include animation (img_shadow, null, 1s, ease-in-out, infinite, alternate);
+            @include keyframes(img_shadow){
+                from{
+                    opacity: 1;
+                }
+                to{
+                    opacity: 0.72;
+                }
+            }
+            z-index: 5;
+            img{
+                @include no-select;
+                @include size(200px, 52px);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    #section_01{
+        @include position(relative,null,null,null,null);
+        @include size(100vw, 720px);
+
+        .sub_title_01{
+            @include position(absolute, 160px, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            span{
+                @include no-select;
+                @include subtitle_02;
+                @include size(100%, null);
+                letter-spacing: -0.1px;
+                color:#4b4b4b;
+            }
+        }
+        .main_title_01{
+            @include position(absolute, 220px, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include no-select;
+            h2{
+                font-size: 34px !important;
+                line-height: 24px;
+                color:#4b4b4b;
+            }
+        }
+
+        .btn_demo_wrap_01{
+            @include position(absolute, 290px, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(240px, 48px);
+            @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+            background: btnColor(darkColor);
+            .btn_demo{
+                @include no-select;
+                @include size(240px, 48px);
+                @include position(absolute, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                @include button;
+                text-align: center;
+                text-decoration: none;
+                color:#fff;
+                text-transform: uppercase;
+                line-height: 48px;
+                cursor: pointer;
+            }
+            &:active, &:focus {
+                background: btnColor(darkColor_active);
+                @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+            }
+        }
+
+        .main_img_01{
+            @include position(absolute, 480px, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include animation (img_ani, null, 1s, ease-in-out, infinite, alternate);
+            @include keyframes(img_ani){
+                from{
+                    top: 480px;
+                }
+                to{
+                    top: 500px;
+                }
+            }
+            z-index: 10; 
+            img{
+                @include no-select;
+                @include size(240px, 240px);
+            }
+        }
+
+        .main_img_shadow_01{
+            @include position(absolute, 640px, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include animation (img_shadow, null, 1s, ease-in-out, infinite, alternate);
+            @include keyframes(img_shadow){
+                from{
+                    opacity: 1;
+                }
+                to{
+                    opacity: 0.72;
+                }
+            }
+            z-index: 5;
+            img{
+                @include no-select;
+                @include size(200px, 52px);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    #section_01{
+        
+        .sub_title_01{
+            @include position(absolute, 12%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include no-select;
+            span{
+                @include subtitle_01;
+                font-size: 1.4vw !important;
+                color:#4b4b4b;
+            }
+        }
+        .main_title_01{
+            @include position(absolute, 22%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include no-select;
+            h2{
+                font-size: 4.8vw !important;
+                color:#4b4b4b;
+            }
+        }
+
+        .btn_demo_wrap_01{
+            @include position(absolute, 35%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(16vw, 3.6vw);
+            @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+            background: btnColor(darkColor);
+            .btn_demo{
+                @include no-select;
+                @include size(16vw, 3.6vw);
+                @include position(absolute, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                text-align: center;
+                text-decoration: none;
+                color:#fff;
+                font-size: 1vw;
+                font-weight: $medium;
+                line-height: 3.65vw;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            &:hover{
+                background: btnColor(darkColor_hover);
+                @include box-shadow(0px, 4px, 16px, rgba(22,65,76,0.32));
+            }
+            &:active{
+                background: btnColor(darkColor_active);
+                @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+            }
+        }
+
+        .main_img_01{
+            @include position(absolute, 62%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include animation (img_ani, null, 1s, ease-in-out, infinite, alternate);
+            @include keyframes(img_ani){
+                from{
+                    top: 62%;
+                }
+                to{
+                    top: 64%;
+                }
+            }
+            z-index: 10; 
+            img{
+                @include no-select;
+                @include size(20vw, 20vw);
+            }
+        }
+
+        .main_img_shadow_01{
+            @include position(absolute, 84%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include animation (img_shadow, null, 1s, ease-in-out, infinite, alternate);
+            @include keyframes(img_shadow){
+                from{
+                    opacity: 1;
+                }
+                to{
+                    opacity: 0.72;
+                }
+            }
+            z-index: 5;
+            img{
+                @include no-select;
+                @include size(300px, 52px);
+            }
+        }
+    }
+}

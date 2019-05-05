@@ -1,0 +1,176 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_extends';
+
+@media only screen and (max-width: 480px) {
+
+    #section_03{
+        @include position(relative,null,null,null,null);
+        @include size(100vw, 100vh);
+
+        .main_wrap_03 {
+            @include position(absolute, -8%, null, null, -8%);
+            @include size(80vw,100vh);
+            .main_title_wrap{
+                @include position(relative, 14%, null, null, 16%);
+                h2{
+                    @include no-select;
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-style: italic;
+                    color:color(mainColor_dark);
+                }
+                
+            }
+            .sub_title_wrap{
+                @include position(relative, 16%, null, null, 18%);
+                .sub_title_01{
+                    @include no-select;
+                    @include caption;
+                    margin-bottom: 24px;
+                    color:#333;
+                }
+                .descLine{
+                    @include position(absolute, 56%, null, null, 44%);
+                    @include transform(translate(-50%, -50%));
+                    @include size(240px,2px);
+                    background: color(mainColor);
+                }
+                .sub_title_02{
+                    @include no-select;
+                    @include outline;
+                    color:#4b4b4b;
+                }
+            }
+        }
+    
+        .img_wrap_03{
+            @include position(absolute, 72%, -20%, null, null);
+            @include transform(translate(-50%, -50%));
+    
+            img{
+                @include box-shadow(4px, 0px, 32px, rgba(22,65,76,0.24));
+                @include no-select;
+                height: 48vh;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    #section_03{
+        @include position(relative,null,null,null,null);
+        @include size(100vw, 720px);
+
+        .main_wrap_03 {
+            @include position(absolute, -4%, null, null, -6%);
+            @include size(80vw,720px);
+            .main_title_wrap{
+                @include position(relative, 14%, null, null, 16%);
+                h2{
+                    @include no-select;
+                    font-size: 48px;
+                    line-height: 56px;
+                    font-style: italic;
+                    color:color(mainColor_dark);
+                }
+                
+            }
+            .sub_title_wrap{
+                @include position(relative, 16%, null, null, 18%);
+                .sub_title_01{
+                    @include no-select;
+                    @include subtitle_01;
+                    margin-bottom: 24px;
+                    color:#333;
+                }
+                .descLine{
+                    @include position(absolute, 64%, null, null, 160px);
+                    @include transform(translate(-50%, -50%));
+                    @include size(320px,2px);
+                    background: color(mainColor);
+                }
+                .sub_title_02{
+                    @include no-select;
+                    @include caption;
+                    color:#4b4b4b;
+                }
+            }
+        }
+    
+        .img_wrap_03{
+            @include position(absolute, 68%, -9%, null, null);
+            @include transform(translate(-50%, -50%));
+    
+            img{
+                @include box-shadow(4px, 0px, 32px, rgba(22,65,76,0.24));
+                @include no-select;
+                height: 46vw;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    #section_03{
+        
+        .main_wrap_03 {
+            @include position(absolute, 0, null, null, 0%);
+            @include size(50vw,100vh);
+            .main_title_wrap{
+                @include position(relative, 14%, null, null, 16%);
+                h2{
+                    @include no-select;
+                    font-size: 4.4vw;
+                    line-height: 5.6vw;
+                    font-style: italic;
+                    color:color(mainColor_dark);
+                }
+                
+            }
+            .sub_title_wrap{
+                @include position(relative, 20%, null, null, 18%);
+                .sub_title_01{
+                    @include no-select;
+                    margin-bottom: 2.4vw;
+                    font-size: 1.6vw;
+                    line-height: 2.8vw;
+                    color:#333;
+                }
+                .descLine{
+                    @include position(relative, 50%, null, null, 34%);
+                    @include transform(translate(-50%, -50%));
+                    @include size(34vw,2px);
+                    background: color(mainColor);
+                    margin-bottom: 2.4vw;
+                }
+                .sub_title_02{
+                    @include no-select;
+                    font-size: 1.2vw;
+                    line-height: 2.4vw;
+                    color:#4b4b4b;
+                }
+            }
+        }
+
+        .img_wrap_03{
+            @include position(absolute, 50%, -8%, null, null);
+            @include transform(translate(-50%, -50%));
+
+            img{
+                @include box-shadow(4px, 0px, 32px, rgba(22,65,76,0.24));
+                @include no-select;
+                height: 560px;
+                border-radius: 8px;
+            }
+        }
+    }
+}

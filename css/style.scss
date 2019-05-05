@@ -10,19 +10,19 @@
 @import './partials/_extends';
 
 // 360viewer
-@import './360viewer/1_mobile_itemInfo',
-        './360viewer/1_mobile_viewer',
-        './360viewer/2_tablet_itemInfo',
-        './360viewer/2_tablet_viewer',
-        './360viewer/3_pc_itemInfo',
-        './360viewer/3_pc_viewer';
+@import './01_360viewer/1_mobile_itemInfo',
+        './01_360viewer/1_mobile_viewer',
+        './01_360viewer/2_tablet_itemInfo',
+        './01_360viewer/2_tablet_viewer',
+        './01_360viewer/3_pc_itemInfo',
+        './01_360viewer/3_pc_viewer';
 
 // 360viewer
-@import './webSite/loading',
-        './webSite/web_common',
-        './webSite/section_01',
-        './webSite/section_02',
-        './webSite/section_03',
-        './webSite/section_04';  
+@import './02_360webSite/loading',
+        './02_360webSite/web_common',
+        './02_360webSite/section_01',
+        './02_360webSite/section_02',
+        './02_360webSite/section_03',
+        './02_360webSite/section_04';  
   
 // Third-party

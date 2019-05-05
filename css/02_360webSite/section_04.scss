@@ -1,0 +1,304 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_extends';
+
+
+@media only screen and (max-width: 480px) {
+
+    #section_04{
+        @include position(relative,null,null,null,null);
+        @include size(100vw, 100vh);
+
+        .main_wrap_04{
+            @include position(absolute, 18%, null, null, -4%);
+
+            .main_title_wrap_04{
+                @include position(relative, 24%, null, null, 16%);
+                h2{
+                    @include no-select;
+                    @include size(240px, null);
+                    font-size: 30px !important;
+                    line-height: 40px;
+                    font-style: italic;
+                    color:#4b4b4b;
+                }
+
+            }
+            .sub_title_wrap_04{
+                @include position(relative, 29%, null, null, 18%);
+                .sub_title{
+                    @include no-select;
+                    @include size(260px, null);
+                    @include subtitle_02;
+                    margin: 2.4vw 0;
+                    font-size: 10px;
+                    color:#555;
+                }
+            }
+            .copyright_wrap_04{
+                @include position(relative, 29%, null, null, 18%);
+                .copyright{
+                    @include no-select;
+                    margin-bottom: 2.4vw;
+                    font-size: 1.2vw;
+                    color:#777;
+                }
+            }
+        }
+
+        .sub_wrap_04{
+            @include position(absolute, null, null, 0, 68%);
+            @include transform(translate(-50%, -50%));
+
+            .btn_demo_wrap_04{
+                @include size(160px, 48px);
+                @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+                background: btnColor(darkColor);
+                margin-bottom: 24px;
+                .btn_demo{
+                    @include no-select;
+                    @include size(160px, 48px);
+                    @include position(absolute, null, null, null, null);
+                    @include button;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:#fff;
+                    line-height: 48px;
+                    cursor: pointer;
+                }
+                &:active, &:focus {
+                    background: btnColor(darkColor_active);
+                    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+                }
+            }
+            
+            .btn_contact_wrap_04{
+                @include size(160px, 48px);
+                @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+                background: color(mainColor);
+                .btn_contact{
+                    @include no-select;
+                    @include size(160px, 48px);
+                    @include position(absolute, null, null, null, null);
+                    @include button;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:#fff;
+                    line-height: 48px;
+                    cursor: pointer;
+                }
+                &:active, &:focus {
+                    background: btnColor(mainColor_dark);
+                    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+                }
+            }  
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    #section_04{
+        @include position(relative,null,null,null,null);
+        @include size(100vw, 720px);
+
+        .main_wrap_04{
+            @include position(absolute, 18%, null, null, 4%);
+
+            .main_title_wrap_04{
+                @include position(relative, 24%, null, null, 16%);
+                h2{
+                    @include no-select;
+                    @include size(400px, null);
+                    font-size: 34px !important;
+                    line-height: 40px;
+                    font-style: italic;
+                    color:#4b4b4b;
+                }
+
+            }
+            .sub_title_wrap_04{
+                @include position(relative, 29%, null, null, 18%);
+                .sub_title{
+                    @include no-select;
+                    @include size(400px, null);
+                    @include subtitle_01;
+                    margin: 2.4vw 0;
+                    color:#555;
+                }
+            }
+            .copyright_wrap_04{
+                @include position(relative, 29%, null, null, 18%);
+                .copyright{
+                    @include no-select;
+                    margin-bottom: 2.4vw;
+                    font-size: 1.2vw;
+                    color:#777;
+                }
+            }
+        }
+
+        .sub_wrap_04{
+            @include position(absolute, null, null, 0, 80%);
+            @include transform(translate(-50%, -50%));
+
+            .btn_demo_wrap_04{
+                @include size(200px, 48px);
+                @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+                background: btnColor(darkColor);
+                margin-bottom: 24px;
+                .btn_demo{
+                    @include no-select;
+                    @include size(200px, 48px);
+                    @include position(absolute, null, null, null, null);
+                    @include button;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:#fff;
+                    line-height: 48px;
+                    cursor: pointer;
+                }
+                &:active, &:focus {
+                    background: btnColor(darkColor_active);
+                    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+                }
+            }
+            
+            .btn_contact_wrap_04{
+                @include size(200px, 48px);
+                @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+                background: color(mainColor);
+                .btn_contact{
+                    @include no-select;
+                    @include size(200px, 48px);
+                    @include position(absolute, null, null, null, null);
+                    @include button;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:#fff;
+                    line-height: 48px;
+                    cursor: pointer;
+                }
+                &:active, &:focus {
+                    background: btnColor(mainColor_dark);
+                    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+                }
+            }  
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    #section_04{
+
+        .main_wrap_04{
+            @include position(absolute, 16%, null, null, 2%);
+            @include size(850px, null);
+
+            .main_title_wrap_04{
+                @include position(relative, 24%, null, null, 16%);
+                margin-bottom: 32px;
+                h2{
+                    @include no-select;
+                    font-size: 50px;
+                    font-style: italic;
+                    color:#4b4b4b;
+                }
+
+            }
+            .sub_title_wrap_04{
+                @include position(relative, 29%, null, null, 16%);
+
+                .sub_title{
+                    @include no-select;
+                    @include subtitle_01;
+                    margin-bottom: 2.4vw;
+                    font-size: 1.6vw;
+                    line-height: 3vw;
+                    color:#333;
+                }
+            }
+            .copyright_wrap_04{
+                @include position(relative, 29%, null, null, 18%);
+                .copyright{
+                    @include no-select;
+                    margin-bottom: 2.4vw;
+                    font-size: 1.2vw;
+                    color:#777;
+                }
+            }
+        }
+
+        .sub_wrap_04{
+            @include position(absolute, null, -12%, 16%, null);
+            @include transform(translate(-50%, -50%));
+
+            .btn_demo_wrap_04{
+                @include size(280px, 60px);
+                @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+                background: btnColor(darkColor);
+                float: left;
+                display: inline-block;
+                margin-right: 32px;
+                .btn_demo{
+                    @include no-select;
+                    @include size(280px, 60px);
+                    @include button;
+                    @include position(absolute, null, null, null, null);
+                    text-align: center;
+                    text-decoration: none;
+                    color:#fff;
+                    font-size: 18px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+                &:hover{
+                    background: btnColor(darkColor_hover);
+                    @include box-shadow(0px, 4px, 16px, rgba(22,65,76,0.32));
+                }
+                &:active{
+                    background: btnColor(darkColor_active);
+                    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+                }
+            }
+            
+            .btn_contact_wrap_04{
+                @include size(280px, 60px);
+                @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+                background: color(mainColor);
+                display: inline-block;
+                .btn_contact{
+                    @include no-select;
+                    @include size(280px, 60px);
+                    @include button;
+                    @include position(absolute, null, null, null, null);
+                    text-align: center;
+                    text-decoration: none;
+                    color:#fff;
+                    font-size: 18px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+                &:hover{
+                    background: btnColor(mainColor_light);
+                    @include box-shadow(0px, 4px, 16px, rgba(22,65,76,0.32));
+                }
+                &:active{
+                    background: btnColor(mainColor_dark);
+                    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+                }
+            }  
+        }
+    }
+}
