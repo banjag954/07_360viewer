@@ -137,7 +137,7 @@
                 @include position(relative, 29%, null, null, 18%);
                 .copyright{
                     @include no-select;
-                    margin-bottom: 2.4vw;
+                    line-height: 18px;
                     font-size: 1.2vw;
                     color:#777;
                 }
