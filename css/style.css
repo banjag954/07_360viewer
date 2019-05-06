@@ -4881,7 +4881,7 @@ b {
     #section_03 .main_wrap_03 {
       position: absolute !important;
       top: -8%;
-      left: -8%;
+      left: -16px;
       width: 280px;
       height: 680px; }
       #section_03 .main_wrap_03 .main_title_wrap {
@@ -4916,6 +4916,7 @@ b {
           line-height: 18px;
           letter-spacing: 0.4px;
           margin-bottom: 24px;
+          font-size: 11px;
           color: #333; }
         #section_03 .main_wrap_03 .sub_title_wrap .descLine {
           position: absolute !important;

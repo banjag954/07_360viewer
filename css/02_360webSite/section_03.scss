@@ -13,7 +13,7 @@
         @include size(100vw, 680px);
 
         .main_wrap_03 {
-            @include position(absolute, -8%, null, null, -8%);
+            @include position(absolute, -8%, null, null, -16px);
             @include size(280px,680px);
             .main_title_wrap{
                 @include position(relative, 14%, null, null, 16%);
@@ -32,6 +32,7 @@
                     @include no-select;
                     @include caption;
                     margin-bottom: 24px;
+                    font-size: 11px;
                     color:#333;
                 }
                 .descLine{
