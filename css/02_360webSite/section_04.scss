@@ -109,7 +109,7 @@
         @include size(100vw, 720px);
 
         .main_wrap_04{
-            @include position(absolute, 18%, null, null, 4%);
+            @include position(absolute, 18%, null, null, 24px);
 
             .main_title_wrap_04{
                 @include position(relative, 24%, null, null, 16%);
@@ -145,7 +145,7 @@
         }
 
         .sub_wrap_04{
-            @include position(absolute, null, null, 0, 80%);
+            @include position(absolute, null, 0, 0, null);
             @include transform(translate(-50%, -50%));
 
             .btn_demo_wrap_04{

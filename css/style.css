@@ -4159,7 +4159,7 @@ b {
     #section_02 .main_img_wrap_02 {
       position: absolute !important;
       top: 24%;
-      right: 16%;
+      right: 20%;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;
       -ms-transform: translate(-50%, -50%) !important;
@@ -4249,8 +4249,8 @@ b {
         background: linear-gradient(45deg, #68839F, #CDE7ED); }
     #section_02 .main_title_wrap_02 {
       position: absolute !important;
-      top: 64%;
-      left: 36%;
+      top: 66%;
+      left: 240px;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;
       -ms-transform: translate(-50%, -50%) !important;
@@ -4278,7 +4278,8 @@ b {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        font-size: 28px;
+        width: 340px;
+        font-size: 32px;
         line-height: 48px;
         color: #333; }
         #section_02 .main_title_wrap_02 h2 g {
@@ -4289,7 +4290,7 @@ b {
     #section_02 .img_top_wrap_02 {
       position: absolute !important;
       top: 38%;
-      right: -2%;
+      right: 0%;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;
       -ms-transform: translate(-50%, -50%) !important;
@@ -5032,7 +5033,7 @@ b {
     #section_03 .img_wrap_03 {
       position: absolute !important;
       top: 68%;
-      right: -9%;
+      right: -64px;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;
       -ms-transform: translate(-50%, -50%) !important;
@@ -5367,7 +5368,7 @@ b {
     #section_04 .main_wrap_04 {
       position: absolute !important;
       top: 18%;
-      left: 4%; }
+      left: 24px; }
       #section_04 .main_wrap_04 .main_title_wrap_04 {
         position: relative !important;
         top: 24%;
@@ -5419,8 +5420,8 @@ b {
           color: #777; }
     #section_04 .sub_wrap_04 {
       position: absolute !important;
+      right: 0;
       bottom: 0;
-      left: 80%;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;
       -ms-transform: translate(-50%, -50%) !important;

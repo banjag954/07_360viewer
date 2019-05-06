@@ -151,7 +151,7 @@
         @include size(100vw, 720px);
 
         .main_img_wrap_02{
-            @include position(absolute, 24%, 16%, null, null);
+            @include position(absolute, 24%, 20%, null, null);
             @include transform(translate(-50%, -50%));
             @include animation (card_01, null, 1s, ease-in-out, infinite, alternate);
             @include keyframes(card_01){
@@ -185,7 +185,7 @@
             }
         }
         .main_title_wrap_02{
-            @include position(absolute, 64%, null, null, 36%);
+            @include position(absolute, 66%, null, null, 240px);
             @include transform(translate(-50%, -50%));
             span{
                 @include subtitle_01;
@@ -198,7 +198,8 @@
 
             h2{
                 @include no-select;
-                font-size: 28px;
+                @include size(340px, null);
+                font-size: 32px;
                 line-height: 48px;
                 color:#333;
                 g{  
@@ -210,7 +211,7 @@
             }
         }
         .img_top_wrap_02 {
-            @include position(absolute, 38%, -2%, null, null);
+            @include position(absolute, 38%, 0%, null, null);
             @include transform(translate(-50%, -50%));
             @include animation (card_02, null, 1s, ease-in-out, infinite, alternate);
             @include keyframes(card_02){

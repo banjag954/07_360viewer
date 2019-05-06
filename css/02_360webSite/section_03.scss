@@ -105,7 +105,7 @@
         }
     
         .img_wrap_03{
-            @include position(absolute, 68%, -9%, null, null);
+            @include position(absolute, 68%, -64px, null, null);
             @include transform(translate(-50%, -50%));
     
             img{
