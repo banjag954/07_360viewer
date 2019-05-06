@@ -14,7 +14,7 @@
 
         .main_wrap_03 {
             @include position(absolute, -8%, null, null, -8%);
-            @include size(80vw,680px);
+            @include size(280px,680px);
             .main_title_wrap{
                 @include position(relative, 14%, null, null, 16%);
                 h2{
@@ -49,13 +49,13 @@
         }
     
         .img_wrap_03{
-            @include position(absolute, 72%, -20%, null, null);
+            @include position(absolute, 72%, -54px, null, null);
             @include transform(translate(-50%, -50%));
     
             img{
                 @include box-shadow(4px, 0px, 32px, rgba(22,65,76,0.24));
                 @include no-select;
-                height: 48vh;
+                height: 280px;
                 border-radius: 8px;
             }
         }

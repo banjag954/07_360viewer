@@ -4882,7 +4882,7 @@ b {
       position: absolute !important;
       top: -8%;
       left: -8%;
-      width: 80vw;
+      width: 280px;
       height: 680px; }
       #section_03 .main_wrap_03 .main_title_wrap {
         position: relative !important;
@@ -4944,7 +4944,7 @@ b {
     #section_03 .img_wrap_03 {
       position: absolute !important;
       top: 72%;
-      right: -20%;
+      right: -54px;
       -webkit-transform: translate(-50%, -50%) !important;
       -moz-transform: translate(-50%, -50%) !important;
       -ms-transform: translate(-50%, -50%) !important;
@@ -4959,7 +4959,7 @@ b {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        height: 48vh;
+        height: 280px;
         border-radius: 8px; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
