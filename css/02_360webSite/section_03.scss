@@ -14,7 +14,7 @@
 
         .main_wrap_03 {
             @include position(absolute, -8%, null, null, -8%);
-            @include size(80vw,100vh);
+            @include size(80vw,680px);
             .main_title_wrap{
                 @include position(relative, 14%, null, null, 16%);
                 h2{
