@@ -77,9 +77,7 @@ animationCard = ()=> {
       'box-shadow': '0 8px 30px rgba(14,21,47,0.4)'
     });
   });
-
 }
-
 
 // 작동부
 
@@ -91,5 +89,6 @@ if (matchMedia("screen and (min-width: 1025px)").matches) {
 } else {
 
   animationLoading();
+  
 }
 
