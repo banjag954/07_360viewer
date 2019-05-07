@@ -15,6 +15,7 @@
         .main_wrap_03 {
             @include position(absolute, -8%, null, null, -16px);
             @include size(280px,680px);
+
             .main_title_wrap{
                 @include position(relative, 14%, null, null, 16%);
                 h2{
@@ -24,8 +25,8 @@
                     font-style: italic;
                     color:color(mainColor_dark);
                 }
-                
             }
+
             .sub_title_wrap{
                 @include position(relative, 16%, null, null, 18%);
                 .sub_title_01{
@@ -70,8 +71,9 @@
         @include size(100vw, 720px);
 
         .main_wrap_03 {
-            @include position(absolute, -4%, null, null, -6%);
+            @include position(absolute, null, null, null, -40px);
             @include size(80vw,720px);
+            
             .main_title_wrap{
                 @include position(relative, 14%, null, null, 16%);
                 h2{
@@ -80,9 +82,9 @@
                     line-height: 56px;
                     font-style: italic;
                     color:color(mainColor_dark);
-                }
-                
+                }      
             }
+
             .sub_title_wrap{
                 @include position(relative, 16%, null, null, 18%);
                 .sub_title_01{

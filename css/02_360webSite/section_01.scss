@@ -111,11 +111,11 @@
         .sub_title_01{
             @include position(absolute, 160px, null, null, 50%);
             @include transform(translate(-50%, -50%));
+            text-align: center;
             span{
                 @include no-select;
                 @include subtitle_02;
-                @include size(100%, null);
-                letter-spacing: -0.1px;
+                font-size: 11px !important;
                 color:#4b4b4b;
             }
         }
@@ -124,7 +124,7 @@
             @include transform(translate(-50%, -50%));
             @include no-select;
             h2{
-                font-size: 34px !important;
+                font-size: 32px !important;
                 line-height: 24px;
                 color:#4b4b4b;
             }

@@ -61,8 +61,8 @@
 
             h2{
                 @include no-select;
-                @include size(220px,null);
-                font-size: 19px;
+                @include size(200px,null);
+                font-size: 20px;
                 line-height: 40px;
                 color:#333;
                 g{  
@@ -185,7 +185,7 @@
             }
         }
         .main_title_wrap_02{
-            @include position(absolute, 66%, null, null, 240px);
+            @include position(absolute, 66%, null, null, 220px);
             @include transform(translate(-50%, -50%));
             span{
                 @include subtitle_01;
@@ -198,8 +198,8 @@
 
             h2{
                 @include no-select;
-                @include size(370px, null);
-                font-size: 32px;
+                @include size(340px, null);
+                font-size: 33px;
                 line-height: 48px;
                 color:#333;
                 g{  
@@ -291,7 +291,7 @@
             @include animation (card_01, null, 1s, ease-in-out, infinite, alternate);
             @include keyframes(card_01){
                 from{
-                    top: 49.5%;
+                    top: 49.5%;                    
                 }
                 to{
                     top: 50%;

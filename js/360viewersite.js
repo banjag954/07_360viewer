@@ -1,6 +1,5 @@
 
 // 기능부
-
 // page_transition animation
 animationLoading = ()=> {
 
@@ -35,7 +34,7 @@ animationLoading = ()=> {
                 {y:16, autoAlpha: 1, ease:Back.easeInOut},
                 0.1
             )
-            .to(loader, 0.3, {y:-80, autoAlpha:0, ease:Back.easeIn},'+=0.3');
+            .to(loader, 0.3, { autoAlpha:0, ease:Back.easeIn},'+=0.3');
     }
 
     // Appear mainPage
@@ -47,7 +46,6 @@ animationLoading = ()=> {
             .to(pageStart,null,{autoAlpha: 1});
     }
 }
-
 
 // container_03 card animation
 animationCard = ()=> {
@@ -81,6 +79,7 @@ animationCard = ()=> {
   });
 
 }
+
 
 // 작동부
 

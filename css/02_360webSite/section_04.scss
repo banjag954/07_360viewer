@@ -112,7 +112,7 @@
             @include position(absolute, 18%, null, null, 24px);
 
             .main_title_wrap_04{
-                @include position(relative, 24%, null, null, 16%);
+                @include position(relative, 24%, null, null, 24px);
                 h2{
                     @include no-select;
                     @include size(400px, null);
@@ -124,7 +124,7 @@
 
             }
             .sub_title_wrap_04{
-                @include position(relative, 29%, null, null, 18%);
+                @include position(relative, 29%, null, null, 32px);
                 .sub_title{
                     @include no-select;
                     @include size(400px, null);
@@ -134,7 +134,7 @@
                 }
             }
             .copyright_wrap_04{
-                @include position(relative, 29%, null, null, 18%);
+                @include position(relative, 29%, null, null, 32px);
                 .copyright{
                     @include no-select;
                     line-height: 18px;
