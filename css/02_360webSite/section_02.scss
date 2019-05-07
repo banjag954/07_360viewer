@@ -61,7 +61,7 @@
 
             h2{
                 @include no-select;
-                @include size(200px,null);
+                @include size(220px,null);
                 font-size: 19px;
                 line-height: 40px;
                 color:#333;
@@ -198,7 +198,7 @@
 
             h2{
                 @include no-select;
-                @include size(340px, null);
+                @include size(370px, null);
                 font-size: 32px;
                 line-height: 48px;
                 color:#333;

@@ -19,16 +19,19 @@
             span{
                 @include no-select;
                 @include caption;
-                @include size(100%, null);
+                @include size(280px, null);
+                font-size: 11px !important;
                 color:#4b4b4b;
             }
         }
         .main_title_01{
             @include position(absolute, 32%, null, null, 50%);
             @include transform(translate(-50%, -50%));
-            @include no-select;
+
             h2{
-                font-size: 20px !important;
+                @include no-select;
+                font-size: 17px !important;
+                font-weight: $bold;
                 line-height: 24px;
                 color:#4b4b4b;
             }
